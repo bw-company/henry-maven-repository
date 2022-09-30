@@ -20,7 +20,12 @@ class CredentialsTest {
         """.trimIndent())
 
     val credential = HenryMavenRepositoryPlugin.findCredentials(file, NOPLogger.NOP_LOGGER)
-    assertEquals(credential.user, "my-github-user")
-    assertEquals(credential.pass, "my-github-token")
+    if (System.getenv("GITHUB_TOKEN").isNullOrBlank()) {
+      assertEquals(credential.user, "my-github-user")
+      assertEquals(credential.pass, "my-github-token")
+    } else {
+      assertEquals(credential.user, System.getenv("GITHUB_USER"))
+      assertEquals(credential.pass, System.getenv("GITHUB_TOKEN"))
+    }
   }
 }
