@@ -43,6 +43,12 @@ gradlePlugin {
       }
 }
 
+pluginBundle {
+  website = "https://github.com/bw-company/henry-maven-repository"
+  vcsUrl = "https://github.com/bw-company/henry-maven-repository.git"
+  tags = listOf("packages")
+}
+
 gradlePlugin.testSourceSets(sourceSets["functionalTest"])
 
 tasks.named<Task>("check") { dependsOn(testing.suites.named("functionalTest")) }
