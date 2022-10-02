@@ -21,7 +21,7 @@ plugins {
 repositories {
     packages(
         org = "organization",
-        repo = "henry-apis",
+        repo = "repo",
         groupRegex = """jp\.henry.*"""
     )
 }
