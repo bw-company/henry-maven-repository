@@ -1,6 +1,7 @@
 # henry-maven-repository
 
 [![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
+[![Gradle Plugin Portal](https://img.shields.io/maven-metadata/v?label=Plugin+Portal&metadataUrl=https%3A%2F%2Fplugins.gradle.org%2Fm2%2Fjp%2Fhenry%2Fgradle%2Fplugin%2Fmaven-metadata.xml)](https://plugins.gradle.org/plugin/jp.henry.maven.repository)
 
 Make it easier downloading artifacts from GitHub Packages.
 
