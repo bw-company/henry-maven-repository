@@ -16,9 +16,9 @@ dependencies {
   compileOnly("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 }
 
-kotlin { jvmToolchain { languageVersion.set(JavaLanguageVersion.of(17)) } }
+kotlin { jvmToolchain { languageVersion.set(JavaLanguageVersion.of(11)) } }
 
-java { toolchain { languageVersion.set(JavaLanguageVersion.of(17)) } }
+java { toolchain { languageVersion.set(JavaLanguageVersion.of(11)) } }
 
 tasks.withType<KotlinCompile> { kotlinOptions.jvmTarget = "1.8" }
 
