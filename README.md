@@ -16,7 +16,7 @@ Apply the plugin to your build script, import the extension method and use it as
 ```kotlin
 import jp.henry.gradle.repository.packages
 plugins {
-    id("jp.henry.maven.repository")
+    id("jp.henry.maven.repository") version "1.0.1"
 }
 
 repositories {
