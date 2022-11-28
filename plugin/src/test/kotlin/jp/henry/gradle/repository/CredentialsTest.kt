@@ -17,7 +17,8 @@ class CredentialsTest {
         """
             GITHUB_USER=my-github-user
             GITHUB_TOKEN=my-github-token
-        """.trimIndent())
+        """
+            .trimIndent())
 
     val credential = HenryMavenRepositoryPlugin.findCredentials(file, NOPLogger.NOP_LOGGER)
     if (System.getenv("GITHUB_TOKEN").isNullOrBlank()) {
