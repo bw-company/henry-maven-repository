@@ -41,7 +41,7 @@
       ]
     },
     "engines": {
-      "node": "^16.16.0"
+      "node": "^18"
     },
     "private": true
   }
