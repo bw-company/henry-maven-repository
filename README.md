@@ -42,7 +42,7 @@ steps:
       GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 ```
 
-For the build in your local, you can store the token in the `local.properties` file at the root of your project:
+For the build in your local, you can store the token in the `local.properties` file at the root of your project.
 
 ## How to develop
 
