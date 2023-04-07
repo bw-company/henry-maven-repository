@@ -16,7 +16,7 @@ Apply the plugin to your build script, import the extension method and use it as
 ```kotlin
 import jp.henry.gradle.repository.packages
 plugins {
-    id("jp.henry.maven.repository") version "1.0.1"
+    id("jp.henry.maven.repository") version "2.0.0"
 }
 
 repositories {
@@ -42,7 +42,7 @@ steps:
       GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 ```
 
-For the build in your local, you can store the token in the `app/src/main/resources/local.properties` file.
+For the build in your local, you can store the token in the `local.properties` file at the root of your project.
 
 ## How to develop
 

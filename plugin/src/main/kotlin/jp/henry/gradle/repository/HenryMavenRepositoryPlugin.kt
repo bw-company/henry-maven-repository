@@ -10,7 +10,7 @@ import org.gradle.api.artifacts.dsl.RepositoryHandler
 import org.gradle.api.artifacts.repositories.MavenArtifactRepository
 import org.slf4j.Logger
 
-const val PROPERTIES_FILE_PATH = "app/src/main/resources/local.properties"
+const val PROPERTIES_FILE_PATH = "local.properties"
 
 data class Credential(val user: String?, val pass: String?)
 
