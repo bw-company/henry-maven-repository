@@ -16,19 +16,19 @@ dependencies {
   compileOnly("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 }
 
-kotlin { jvmToolchain { languageVersion.set(JavaLanguageVersion.of(11)) } }
+kotlin { jvmToolchain { languageVersion.set(JavaLanguageVersion.of("8")) } }
 
-java { toolchain { languageVersion.set(JavaLanguageVersion.of(11)) } }
+java { toolchain { languageVersion.set(JavaLanguageVersion.of("8")) } }
 
 tasks.withType<KotlinCompile> { kotlinOptions.jvmTarget = "1.8" }
 
 testing {
   suites {
-    val test by getting(JvmTestSuite::class) { useKotlinTest() }
+    val test by getting(JvmTestSuite::class) { useJUnit() }
 
     val functionalTest by
         registering(JvmTestSuite::class) {
-          useKotlinTest()
+          useJUnit()
 
           dependencies { implementation(project()) }
         }

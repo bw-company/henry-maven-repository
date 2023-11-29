@@ -1,9 +1,9 @@
 /* (C) 2022 Henry, Inc. */
 package jp.henry.gradle.repository
 
-import kotlin.test.Test
 import org.gradle.testkit.runner.GradleRunner
 import org.junit.Rule
+import org.junit.Test
 import org.junit.rules.TemporaryFolder
 
 class HenryMavenRepositoryPluginFunctionalTest {

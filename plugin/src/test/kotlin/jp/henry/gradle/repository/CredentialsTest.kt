@@ -1,9 +1,9 @@
 /* (C) 2022 Henry, Inc. */
 package jp.henry.gradle.repository
 
-import kotlin.test.Test
-import kotlin.test.assertEquals
+import org.junit.Assert.assertEquals
 import org.junit.Rule
+import org.junit.Test
 import org.junit.rules.TemporaryFolder
 import org.slf4j.helpers.NOPLogger
 
