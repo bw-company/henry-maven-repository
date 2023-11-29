@@ -46,13 +46,13 @@ For the build in your local, you can store the token in the `local.properties` f
 
 ## How to develop
 
-First, run `yarn init` to download NPM packages to install Git hooks.
+First, run `pnpm install` to download NPM packages to install Git hooks.
 
 Then simply run the Gradle wrapper by `./gradlew build`, it will resolve dependencies and build the project.
 
 Note that this project uses [spotless](https://github.com/diffplug/spotless) to format code and build scripts.
 So when you make some changes, format them by `./gradlew spotlessApply`.
-It will be automatically executed if you've installed Git hooks by `yarn init`.
+It will be automatically executed if you've installed Git hooks by `pnpm install`.
 
 ## License
 
