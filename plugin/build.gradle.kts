@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
   `java-gradle-plugin`
-  id("com.diffplug.spotless") version "6.18.0"
+  id("com.diffplug.spotless") version "6.23.0"
   id("com.gradle.plugin-publish") version "1.2.1"
   id("org.jetbrains.kotlin.jvm") version "1.9.21"
 }
@@ -16,39 +16,37 @@ dependencies {
   compileOnly("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 }
 
-kotlin { jvmToolchain { languageVersion.set(JavaLanguageVersion.of(11)) } }
+kotlin { jvmToolchain { languageVersion.set(JavaLanguageVersion.of("8")) } }
 
-java { toolchain { languageVersion.set(JavaLanguageVersion.of(11)) } }
+java { toolchain { languageVersion.set(JavaLanguageVersion.of("8")) } }
 
 tasks.withType<KotlinCompile> { kotlinOptions.jvmTarget = "1.8" }
 
 testing {
   suites {
-    val test by getting(JvmTestSuite::class) { useKotlinTest() }
+    val test by getting(JvmTestSuite::class) { useJUnit() }
 
     val functionalTest by
         registering(JvmTestSuite::class) {
-          useKotlinTest()
+          useJUnit()
 
-          dependencies { implementation(project) }
+          dependencies { implementation(project()) }
         }
   }
 }
 
 gradlePlugin {
+  website = "https://github.com/bw-company/henry-maven-repository"
+  vcsUrl = "https://github.com/bw-company/henry-maven-repository.git"
+
   val henryMavenRepository by
       plugins.creating {
         description = "Make it easier downloading artifacts from GitHub Packages."
         displayName = "Henry Maven Repository"
         id = "jp.henry.maven.repository"
         implementationClass = "jp.henry.gradle.repository.HenryMavenRepositoryPlugin"
+        tags = listOf("packages")
       }
-}
-
-pluginBundle {
-  website = "https://github.com/bw-company/henry-maven-repository"
-  vcsUrl = "https://github.com/bw-company/henry-maven-repository.git"
-  tags = listOf("packages")
 }
 
 gradlePlugin.testSourceSets(sourceSets["functionalTest"])

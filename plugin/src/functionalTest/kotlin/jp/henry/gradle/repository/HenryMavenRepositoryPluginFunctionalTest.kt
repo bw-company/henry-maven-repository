@@ -1,16 +1,18 @@
 /* (C) 2022 Henry, Inc. */
 package jp.henry.gradle.repository
 
-import kotlin.test.Test
 import org.gradle.testkit.runner.GradleRunner
 import org.junit.Rule
+import org.junit.Test
 import org.junit.rules.TemporaryFolder
 
 class HenryMavenRepositoryPluginFunctionalTest {
   @get:Rule val tempFolder = TemporaryFolder()
 
   private fun getProjectDir() = tempFolder.root
+
   private fun getBuildFile() = getProjectDir().resolve("build.gradle.kts")
+
   private fun getSettingsFile() = getProjectDir().resolve("settings.gradle.kts")
 
   @Test
