@@ -30,25 +30,23 @@ testing {
         registering(JvmTestSuite::class) {
           useKotlinTest()
 
-          dependencies { implementation(project) }
+          dependencies { implementation(project()) }
         }
   }
 }
 
 gradlePlugin {
+  website = "https://github.com/bw-company/henry-maven-repository"
+  vcsUrl = "https://github.com/bw-company/henry-maven-repository.git"
+
   val henryMavenRepository by
       plugins.creating {
         description = "Make it easier downloading artifacts from GitHub Packages."
         displayName = "Henry Maven Repository"
         id = "jp.henry.maven.repository"
         implementationClass = "jp.henry.gradle.repository.HenryMavenRepositoryPlugin"
+        tags = listOf("packages")
       }
-}
-
-pluginBundle {
-  website = "https://github.com/bw-company/henry-maven-repository"
-  vcsUrl = "https://github.com/bw-company/henry-maven-repository.git"
-  tags = listOf("packages")
 }
 
 gradlePlugin.testSourceSets(sourceSets["functionalTest"])
