@@ -56,7 +56,7 @@ It will be automatically executed if you've installed Git hooks by `pnpm install
 
 ## License
 
-Copyright &copy; 2022 [Henry, Inc.](https://corp.henry-app.jp/)
+Copyright &copy; 2022-2023 [Henry, Inc.](https://corp.henry-app.jp/)
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
