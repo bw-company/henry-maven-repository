@@ -10,7 +10,9 @@ class HenryMavenRepositoryPluginFunctionalTest {
   @get:Rule val tempFolder = TemporaryFolder()
 
   private fun getProjectDir() = tempFolder.root
+
   private fun getBuildFile() = getProjectDir().resolve("build.gradle.kts")
+
   private fun getSettingsFile() = getProjectDir().resolve("settings.gradle.kts")
 
   @Test
