@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
   `java-gradle-plugin`
-  id("com.diffplug.spotless") version "6.23.2"
+  id("com.diffplug.spotless") version "6.23.3"
   id("com.gradle.plugin-publish") version "1.2.1"
   id("org.jetbrains.kotlin.jvm") version "1.9.21"
 }
