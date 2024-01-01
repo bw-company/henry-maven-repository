@@ -15,8 +15,8 @@ devDependencies:
     specifier: ^7.0.2
     version: 7.0.2
   gradle-semantic-release-plugin:
-    specifier: 1.8.0
-    version: 1.8.0(semantic-release@22.0.10)
+    specifier: 1.9.0
+    version: 1.9.0(semantic-release@22.0.10)
   husky:
     specifier: ^8.0.3
     version: 8.0.3
@@ -1155,13 +1155,13 @@ packages:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
     dev: true
 
-  /gradle-semantic-release-plugin@1.8.0(semantic-release@22.0.10):
-    resolution: {integrity: sha512-lRoKlLJvQbvRykDf6nWVuf/XyHEO9TL8dcnLX9lDag8zn5tkOqp5Tctb4re1YEek0zsSVAVX/1nw5lkV5pfm/Q==}
+  /gradle-semantic-release-plugin@1.9.0(semantic-release@22.0.10):
+    resolution: {integrity: sha512-8schNX6kF/M9oHFW25d9lWt0U76rXfqyO5sYreROqpwR+TXt6vcHc8w99dSM8cv1rGe+MuKsKlq5zasK+7Cpug==}
     engines: {node: '>=18'}
     peerDependencies:
       semantic-release: ^22.0.5
     dependencies:
-      promisified-properties: 2.0.27
+      promisified-properties: 3.0.0
       semantic-release: 22.0.10(typescript@5.3.2)
       split2: 4.2.0
     dev: true
@@ -2092,9 +2092,9 @@ packages:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
     dev: true
 
-  /promisified-properties@2.0.27:
-    resolution: {integrity: sha512-fmx256M3b0QcHnqOj+Ok127LoYpmnYRf7g2OyLl7qD7Z0fzNbIZhHHIPKyvegbA29iAPP5BVWv7BJ/y2cMHHjA==}
-    engines: {node: '>=14.16', npm: '>=7.12'}
+  /promisified-properties@3.0.0:
+    resolution: {integrity: sha512-ARteuBuUpPg/+spsMhcKHvdtOW/q8btyyVYYxxegGgx+7u9ix9at8DjP2KM2t8+4SuI8wBLt+3X876FMQx91yQ==}
+    engines: {node: '>=18', npm: '>=7.12'}
     dependencies:
       parsimmon: 1.18.1
     dev: true
