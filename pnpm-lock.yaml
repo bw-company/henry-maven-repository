@@ -27,8 +27,8 @@ devDependencies:
     specifier: ^3.0.0
     version: 3.0.0
   prettier:
-    specifier: ^3.1.1
-    version: 3.1.1
+    specifier: ^3.2.3
+    version: 3.2.3
   semantic-release:
     specifier: 22.0.10
     version: 22.0.10(typescript@5.3.2)
@@ -2082,8 +2082,8 @@ packages:
       load-json-file: 4.0.0
     dev: true
 
-  /prettier@3.1.1:
-    resolution: {integrity: sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==}
+  /prettier@3.2.3:
+    resolution: {integrity: sha512-QNhUTBq+mqt1oH1dTfY3phOKNhcDdJkfttHI6u0kj7M2+c+7fmNKlgh2GhnHiqMcbxJ+a0j2igz/2jfl9QKLuw==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
