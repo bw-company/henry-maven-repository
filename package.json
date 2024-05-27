@@ -9,7 +9,7 @@
       "lint-staged": "^15.2.5",
       "pinst": "^3.0.0",
       "prettier": "^3.2.5",
-      "semantic-release": "23.0.8"
+      "semantic-release": "23.1.1"
     },
     "scripts": {
       "prepare": "husky"
