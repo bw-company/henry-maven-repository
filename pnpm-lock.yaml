@@ -9,8 +9,8 @@ devDependencies:
     specifier: ^19.4.1
     version: 19.4.1(@types/node@18.18.13)(typescript@5.3.2)
   '@commitlint/config-conventional':
-    specifier: ^19.2.2
-    version: 19.2.2
+    specifier: ^19.4.1
+    version: 19.4.1
   conventional-changelog-conventionalcommits:
     specifier: ^8.0.0
     version: 8.0.0
@@ -81,8 +81,8 @@ packages:
       - typescript
     dev: true
 
-  /@commitlint/config-conventional@19.2.2:
-    resolution: {integrity: sha512-mLXjsxUVLYEGgzbxbxicGPggDuyWNkf25Ht23owXIH+zV2pv1eJuzLK3t1gDY5Gp6pxdE60jZnWUY5cvgL3ufw==}
+  /@commitlint/config-conventional@19.4.1:
+    resolution: {integrity: sha512-D5S5T7ilI5roybWGc8X35OBlRXLAwuTseH1ro0XgqkOWrhZU8yOwBOslrNmSDlTXhXLq8cnfhQyC42qaUCzlXA==}
     engines: {node: '>=v18'}
     dependencies:
       '@commitlint/types': 19.0.3
