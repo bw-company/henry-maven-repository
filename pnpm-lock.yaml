@@ -15,8 +15,8 @@ devDependencies:
     specifier: ^8.0.0
     version: 8.0.0
   gradle-semantic-release-plugin:
-    specifier: 1.9.2
-    version: 1.9.2(semantic-release@24.1.0)
+    specifier: 1.10.0
+    version: 1.10.0(semantic-release@24.1.0)
   husky:
     specifier: ^9.1.5
     version: 9.1.5
@@ -1187,8 +1187,8 @@ packages:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
     dev: true
 
-  /gradle-semantic-release-plugin@1.9.2(semantic-release@24.1.0):
-    resolution: {integrity: sha512-8qpf4GYFPQ+UMUymYBy/VchOOwLILAWzZMrZX1R0RR3JMgJBMN2R0tJn92R/3rXmxx4OAqwUFH6Np51eFoxr3w==}
+  /gradle-semantic-release-plugin@1.10.0(semantic-release@24.1.0):
+    resolution: {integrity: sha512-cRUdeeaWjIcHwc+3tcsOXTBCT70aMDewMTwDDnH8xA3SVdQv7p0PNXwX0aN71mI1qD01CqMhCdElElZ/NrEGwA==}
     engines: {node: '>=18'}
     peerDependencies:
       semantic-release: ^24.0.0
