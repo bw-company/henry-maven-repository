@@ -4,7 +4,7 @@ plugins {
   `java-gradle-plugin`
   id("com.diffplug.spotless") version "6.25.0"
   id("com.gradle.plugin-publish") version "1.2.2"
-  id("org.jetbrains.kotlin.jvm") version "2.0.20"
+  id("org.jetbrains.kotlin.jvm") version "2.0.21"
 }
 
 group = "jp.henry.gradle"
