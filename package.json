@@ -1,10 +1,10 @@
 {
     "name": "henry-maven-repository",
     "devDependencies": {
-      "@commitlint/cli": "^19.4.1",
+      "@commitlint/cli": "^19.6.0",
       "@commitlint/config-conventional": "^19.4.1",
       "conventional-changelog-conventionalcommits": "^8.0.0",
-      "gradle-semantic-release-plugin": "1.10.0",
+      "gradle-semantic-release-plugin": "1.10.1",
       "husky": "^9.1.5",
       "lint-staged": "^15.2.10",
       "pinst": "^3.0.0",
