@@ -2,7 +2,7 @@
     "name": "henry-maven-repository",
     "devDependencies": {
       "@commitlint/cli": "^19.6.0",
-      "@commitlint/config-conventional": "^19.4.1",
+      "@commitlint/config-conventional": "^19.6.0",
       "conventional-changelog-conventionalcommits": "^8.0.0",
       "gradle-semantic-release-plugin": "1.10.1",
       "husky": "^9.1.7",
