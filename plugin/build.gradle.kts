@@ -16,9 +16,9 @@ dependencies {
   compileOnly("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 }
 
-kotlin { jvmToolchain { languageVersion.set(JavaLanguageVersion.of("8")) } }
+kotlin { jvmToolchain { languageVersion = JavaLanguageVersion.of("8") } }
 
-java { toolchain { languageVersion.set(JavaLanguageVersion.of("8")) } }
+java { toolchain { languageVersion = JavaLanguageVersion.of("8") } }
 
 tasks.withType<KotlinCompile> { kotlinOptions.jvmTarget = "1.8" }
 
@@ -63,26 +63,26 @@ spotless {
 
 publishing.publications.configureEach {
   (this as MavenPublication).pom {
-    url.set("https://github.com/bw-company/henry-maven-repository/")
+    url = "https://github.com/bw-company/henry-maven-repository/"
     scm {
-      connection.set("scm:git:git@github.com:bw-company/henry-maven-repository.git")
-      developerConnection.set("scm:git:git@github.com:bw-company/henry-maven-repository.git")
-      url.set("https://github.com/bw-company/henry-maven-repository/")
+      connection = "scm:git:git@github.com:bw-company/henry-maven-repository.git"
+      developerConnection = "scm:git:git@github.com:bw-company/henry-maven-repository.git"
+      url = "https://github.com/bw-company/henry-maven-repository/"
     }
     licenses {
       license {
-        name.set("Apache License 2.0")
-        url.set("https://spdx.org/licenses/Apache-2.0.html")
+        name = "Apache License 2.0"
+        url = "https://spdx.org/licenses/Apache-2.0.html"
       }
     }
-    inceptionYear.set("2022")
+    inceptionYear = "2022"
     developers {
       developer {
-        id.set("KengoTODA")
-        name.set("Kengo TODA")
-        email.set("toda_k@henry.jp")
-        url.set("https://github.com/KengoTODA/")
-        timezone.set("+8")
+        id = "KengoTODA"
+        name = "Kengo TODA"
+        email = "toda_k@henry.jp"
+        url = "https://github.com/KengoTODA/"
+        timezone = "+8"
       }
     }
   }
